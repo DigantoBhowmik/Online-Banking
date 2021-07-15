@@ -28,7 +28,7 @@ document.getElementById('Withdraw-choose').addEventListener("click",function(){
 
 
 document.getElementById('addWithdraw').addEventListener("click",function(){
-    if(parseInt(document.getElementById('totalAmount').innerHTML)!=0)
+    if(parseInt(document.getElementById('totalAmount').innerHTML)!=0 && parseInt(document.getElementById('withdrawAmount').value)<=parseInt(document.getElementById('totalAmount').innerHTML))
     {
         document.getElementById('withdrawini').innerHTML=parseInt(document.getElementById('withdrawAmount').value)+parseInt(document.getElementById('withdrawini').innerHTML)
 
